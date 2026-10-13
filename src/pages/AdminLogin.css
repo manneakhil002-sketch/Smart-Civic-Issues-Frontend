@@ -1,0 +1,127 @@
+/* Admin Login Page */
+.admin-login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #eef4fb, #f8fbff);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 38px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e0e8f2;
+  border-radius: 22px;
+  box-shadow: 0 18px 55px rgba(22, 57, 91, 0.12);
+}
+
+.admin-login-card h2 {
+  margin: 0 0 10px;
+  color: #173b63;
+  font-size: 30px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.admin-login-card > p {
+  margin: 0 0 30px;
+  color: #66778a;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.admin-login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-login-card label {
+  display: block;
+  margin-top: 8px;
+  color: #233c58;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.admin-login-card input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border: 1px solid #cbd8e6;
+  border-radius: 10px;
+  outline: none;
+  background: #ffffff;
+  color: #172b42;
+  font-family: inherit;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.admin-login-card input:focus {
+  border-color: #1763a6;
+  box-shadow: 0 0 0 3px rgba(23, 99, 166, 0.12);
+}
+
+.admin-login-card button {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 18px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #17588c;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.admin-login-card button:hover:not(:disabled) {
+  background: #10436d;
+  transform: translateY(-1px);
+}
+
+.admin-login-card button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.admin-login-card .admin-login-message {
+  margin: 18px 0 0;
+  padding: 12px 14px;
+  border-radius: 9px;
+  background: #fff4d9;
+  color: #875900;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .admin-login-page {
+    padding: 16px;
+  }
+
+  .admin-login-card {
+    padding: 26px 20px;
+    border-radius: 16px;
+  }
+
+  .admin-login-card h2 {
+    font-size: 26px;
+  }
+}

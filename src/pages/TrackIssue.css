@@ -1,0 +1,332 @@
+
+.track-page {
+  min-height: calc(100vh - 76px);
+  padding: 48px 20px 36px;
+  background: #f3f7fc;
+  box-sizing: border-box;
+}
+
+.track-heading {
+  max-width: 760px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.track-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 30px;
+  background: #dcecff;
+  color: #174a7e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.track-heading h1 {
+  margin: 18px 0 10px;
+  color: #153657;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+}
+
+.track-heading > p {
+  margin: 0;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.track-card {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(22, 50, 79, 0.08);
+  box-sizing: border-box;
+}
+
+.track-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 22px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e8edf3;
+}
+
+.track-heading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #e7f1ff;
+  font-size: 24px;
+}
+
+.track-card-heading h2 {
+  margin: 0 0 5px;
+  color: #153657;
+  font-size: 21px;
+}
+
+.track-card-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.track-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.track-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.track-field label {
+  color: #243b53;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.track-field input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #243b53;
+  font-family: inherit;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.track-field input:focus {
+  outline: none;
+  border-color: #2876bd;
+  box-shadow: 0 0 0 3px rgba(40, 118, 189, 0.12);
+}
+
+.track-field small {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.track-submit {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1769aa;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.track-submit:hover:not(:disabled) {
+  background: #12558b;
+  transform: translateY(-1px);
+}
+
+.track-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.track-message {
+  margin-top: 20px;
+  padding: 13px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.track-message.error {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.track-result {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #e8edf3;
+}
+
+.track-result-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.result-label {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.track-result-heading h2 {
+  margin: 7px 0 0;
+  color: #153657;
+  font-size: 25px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.status-badge.pending {
+  background: #fff4d6;
+  color: #8a5a00;
+}
+
+.status-badge.in-progress {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-badge.resolved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.track-detail {
+  padding: 15px 0;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.track-detail > span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.track-detail p {
+  margin: 6px 0 0;
+  color: #243b53;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.track-progress {
+  margin-top: 28px;
+}
+
+.track-progress h3 {
+  margin: 0 0 22px;
+  color: #153657;
+  font-size: 18px;
+}
+
+.progress-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.progress-step {
+  position: relative;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.progress-step > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #475569;
+  font-weight: 700;
+}
+
+.progress-step.completed > span {
+  background: #1769aa;
+  color: #ffffff;
+}
+
+.progress-step p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.progress-step.completed p {
+  color: #153657;
+  font-weight: 600;
+}
+
+.track-status-note {
+  margin-top: 18px;
+  color: #991b1b;
+  font-size: 13px;
+}
+
+.track-note {
+  max-width: 760px;
+  margin: 20px auto 0;
+  color: #64748b;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .track-page {
+    padding: 30px 14px;
+  }
+
+  .track-card {
+    padding: 20px 16px;
+  }
+
+  .track-heading > p {
+    font-size: 14px;
+  }
+
+  .track-card-heading h2 {
+    font-size: 19px;
+  }
+
+  .progress-steps {
+    gap: 5px;
+  }
+
+  .progress-step p {
+    font-size: 11px;
+  }
+}
